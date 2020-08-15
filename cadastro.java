@@ -16,7 +16,7 @@ public class cadastro {
         System.out.println("Informe a senha: ");
         String senha = scanner.nextLine();
 
-        if (senha.matches("^(?=.[0-9])(?=.[a-z])(?=.[-, !, @])(?=.[A-Z])(?=.*\\d).+") && senha.length() >= 8){
+        if(senha.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[-, !, @])(?=.*[A-Z])(?=.*\\d).+") && senha.length() > 7){
             System.out.println("Senha padrao forte!!!");
         }
          else{
